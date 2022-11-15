@@ -1,0 +1,129 @@
+{%extends "layout.html"%}
+{%block content%}
+
+
+
+<style type="text/css">
+  .form-style-3{
+    max-width: 900px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 20px;
+  }
+  .form-style-3 label{
+    display:block;
+    margin-bottom: 10px;
+  }
+  .form-style-3 label > span{
+    float: left;
+    width: 350px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  .form-style-3 fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #f5ac1b;
+    padding: 20px;
+    background: #db74af;
+    box-shadow: inset 0px 0px 15px #FFE5E5;
+    -moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+    -webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+  }
+  .form-style-3 fieldset legend{
+    color: #f21bb2;
+    border-top: 1px solid #FFD2D2;
+    border-left: 1px solid #FFD2D2;
+    border-right: 1px solid #FFD2D2;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #FFF4F4;
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow:-0px -1px 2px #F1F1F1;
+    -webkit-box-shadow:-0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size: 25px;
+  }
+  .form-style-3 textarea{
+    width:250px;
+    height:100px;
+  }
+  .form-style-3 input[type=text],
+  .form-style-3 input[type=number],
+  .form-style-3 select, 
+  .form-style-3 textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #FFC2DC;
+    outline: none;
+    color: #121211;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #FFD5E7;
+    -moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+    -webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+    background: #FFEFF6;
+    width:50%;
+  }
+  .form-style-3  input[type=submit],
+  .form-style-3  input[type=button]{
+    background: #7495c4;
+    border: 3px solid #0d0d0d;
+    padding: 15px 25px 15px 25px;
+    color: #fff;
+    box-shadow: inset -1px -1px 3px #FF62A7;
+    -moz-box-shadow: inset -1px -1px 3px #FF62A7;
+    -webkit-box-shadow: inset -1px -1px 3px #FF62A7;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;	
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  body {
+    background-image: url('/static/backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+  
+  </style>
+<body>
+
+  
+ <center>
+    <h1><br/>Heart Disease Prediction<br/><br/></h1>
+    <div class="form-style-3">
+    <form action="{{url_for('predictheartdisease')}}" method="post">
+    <fieldset><legend>Please Provide The Details</legend>
+      <h2>{{output_text}}</h2>
+    <label for="field1"><span>age </span></span><input type="number" step="0.00000000000001" placeholder="age" class="input-field" name="field1" required="required" value="" /></label>
+    <label for="field2"><span>sex </span></span><input type="number" step="0.00000000000001" placeholder="enter 0 for female, 1 for male, according to the dataset " class="input-field" name="field2" required="required" value="" /></label>
+    <label for="field3"><span>cp </span></span><input type="number" step="0.00000000000001" placeholder="enter either 0, 1 , 2, or 3 according to the dataset" class="input-field" name="field3" required="required" value="" /></label>
+    <label for="field4"><span>trestbps</span></span><input type="number" step="0.00000000000001" placeholder="generally between 94-200 according to the dataset" class="input-field" name="field4" required="required" value="" /></label>
+    <label for="field5"><span>chol </span></span><input type="number" step="0.00000000000001" placeholder="generally between 126-564 according to the dataset" class="input-field" name="field5" required="required" value="" /></label>
+    <label for="field6"><span>fbs </span></span><input type="number" step="0.00000000000001" placeholder="enter either 0 or 1 according to the dataset" class="input-field" name="field6" required="required" value="" /></label>
+    <label for="field7"><span>restecg</span></span><input type="number" step="0.00000000000001" placeholder="enter either 0, 1, or 2 according to the dataset" class="input-field" name="field7" required="required" value="" /></label>
+    <label for="field8"><span>thalach</span></span><input type="number" step="0.00000000000001" placeholder="generally between 71-202 according to the dataset" class="input-field" name="field8" required="required" value="" /></label>
+    <label for="field9"><span>exang</span></span><input type="number" step="0.00000000000001" placeholder="enter either 0 or 1 according to the dataset" class="input-field" name="field9" required="required" value="" /></label>
+    <label for="field10"><span>oldpeak </span></span><input type="number" step="0.00000000000001" placeholder="generally between 0-6.20 according to the dataset" class="input-field" name="field10" required="required" value="" /></label>
+    <label for="field11"><span>slope </span></span><input type="number" step="0.00000000000001" placeholder="enter either 0, 1, or 2 according to the dataset" class="input-field" name="field11" required="required" value="" /></label>
+    <label for="field12"><span>ca </span></span><input type="number" step="0.00000000000001" placeholder="enter either 0, 1, 2, 3, or 4 according to the dataset" class="input-field" name="field12" required="required" value="" /></label>
+    <label for="field13"><span>thal </span></span><input type="number" step="0.00000000000001" placeholder="enter either 0, 1 , 2, or 3 according to the dataset" class="input-field" name="field13" required="required" value="" /></label>
+    
+    <label><span> </span><input type="submit" value="Predict" /></label>
+    
+    
+    </form>
+    <h2>{{output_text}}</h2>
+    </div>
+  </center>  
+<body>
+  {%endblock%}

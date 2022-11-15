@@ -1,0 +1,43 @@
+{%extends "layout.html"%}
+{%block content%}
+<style>
+    h2 {color: #000080;}
+      
+    a[href] {color: red;}
+
+    a:hover {color: green;}
+
+    
+    body {
+        background-image: url('/static/backgroundimage.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+        
+        
+</style>
+
+
+<div class="about">
+  <center><h1>Welcome to Our Multiple Disease Predictor Site</h1>
+  <h2>Our trained Machine Learning model can predict whether a person is suffering from a disease or not on the basis of details provided to it.<h2>
+</center>
+  
+    <h2><br/>This site offers the following disease prediction:<br/>
+    <ul>
+        <li><a href="{{ url_for('diabetes') }}">Diabetes</a></li>
+        <li><a href="{{ url_for('parkinsons') }}">Parkinsons</a></li>
+        <li><a href="{{ url_for('heartdisease') }}">Heart Disease</a></li>
+    </ul>
+  </h2>
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <h6>Note: This site is just a dummy project. Please don't take any disease prediction seriously. We don't take any responsibility for wrong predictions.</h6>
+
+</div>
+{%endblock%}
