@@ -1,7 +1,7 @@
 # Project: Multiple-Disease-Predictor-ML-Flask-WebApp
 ### Project Intro/Objective 
 
-The purpose of this project is to predict whether a person is suffering from a particular disease or not on the basis of his/her input data. The prediction has been done by using Machine Learning (ML) classification algorithms and it has been deployed as a Flask web app on Heroku. Currently, this web app can predict 3 types of diseases. 
+The purpose of this project is to predict whether a person is suffering from a particular disease or not on the basis of his/her input data. The prediction has been done by using Machine Learning (ML) classification algorithms and it has been deployed as a Flask web app on Heroku. Currently, this web app can predict 3 types of diseases (Diabetes, Parkinson's and Heart Disease). 
 
 ### See Project
 
@@ -18,10 +18,17 @@ This project requires **Python** and the following Python libraries installed:
 - scikit-learn
 - Flask
 
-You will also need to have software installed to run and execute a Jupyter Notebook.
 
-If you do not have Python installed yet, you can install the Anaconda distribution of Python, which already has the above packages and more included. 
+### Screenshots
 
+**Home Page**
+
+![Home Page](https://user-images.githubusercontent.com/109678911/202175139-d1710976-f39b-461c-9def-e18611f2f3cf.PNG)
+
+
+**Diabetes Prediction Page**
+
+![Diabetes Prediction Page](https://user-images.githubusercontent.com/109678911/202175393-797bf0bb-ed0d-42ae-a872-69004e51c3d7.PNG)
 
 
 ### How this project has been created
