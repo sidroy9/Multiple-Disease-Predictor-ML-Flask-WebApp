@@ -5,7 +5,7 @@ It's an end-to-end Machine Learning Project. The purpose of this project is to p
 
 ### See Project
 
-Visit: https://multiple-disease-predictor-ml.herokuapp.com/
+Visit: https://multiple-disease-predictor-ml.herokuapp.com/  (This link might not work if the Heroku will discontinue its Free tier/plan, in that case, please scroll down and see how this deployed web app looks like on Heroku)
 
 ### Install
 
@@ -19,17 +19,33 @@ This project requires **Python** and the following Python libraries installed:
 - Flask
 
 
-### Screenshots
+### Screenshots (of This Web App When it is Live On Heroku)
 
 **Home Page**
 
-![Home Page](https://user-images.githubusercontent.com/109678911/202175139-d1710976-f39b-461c-9def-e18611f2f3cf.PNG)
+
+![HomePage](https://user-images.githubusercontent.com/109678911/204099558-56535854-14dd-43c6-83f4-ba7ee329662d.PNG)
 
 
 **Diabetes Prediction Page**
 
-![Diabetes Prediction Page](https://user-images.githubusercontent.com/109678911/202175393-797bf0bb-ed0d-42ae-a872-69004e51c3d7.PNG)
+![DiabetesPredictionPage](https://user-images.githubusercontent.com/109678911/204099575-ea73c666-60a5-464f-8fee-ec4440a9674a.PNG)
 
+**Diabetes Prediction Page With Inputs Provided by the User**
+
+![DiabetesPredictionPageWithValues](https://user-images.githubusercontent.com/109678911/204099672-6693a3f3-de0c-4706-bb4b-cc12282866f2.PNG)
+
+**Diabetes Prediction Page Displaying the Output for the Inputs Provided by the User**
+
+![DiabetesPredictionPageOutput](https://user-images.githubusercontent.com/109678911/204099710-34179827-df57-48a2-96fa-883f2c82fba6.PNG)
+
+**Parkinson's Prediction Page**
+
+![ParkinsonsPredictionPage](https://user-images.githubusercontent.com/109678911/204099779-547b7a95-160d-45c7-b650-38abeb7cfd8d.PNG)
+
+**Heart Disease Prediction Page**
+
+![HeartDiseasePredictionPage](https://user-images.githubusercontent.com/109678911/204099841-0298aa88-9b1f-4d38-bf6e-14dd9527d9f6.PNG)
 
 ### How this project has been created
 
@@ -42,6 +58,26 @@ This project requires **Python** and the following Python libraries installed:
 ### Procfile
 
 Procfile is a mechanism for declaring the commands that are executed by an Heroku app on startup. So for this project, the Procfile contains ` web: gunicorn app:app` where the first app represents the name of the python file (`app.py`) that runs the whole application. The second app represents the app name (`app=Flask(__name__)`) that is named inside app.py file.
+
+### Deployment on Heroku With Screenshots
+
+**Step-1** : Login to Heroku, then Create the new app.
+
+![Createapp](https://user-images.githubusercontent.com/109678911/204100024-e9c2b32d-46a8-4858-b0c3-1d428323bbe7.PNG)
+
+**Step-2** : Connect to the GitHub and then Connect to the Repository `sidroy9/Multiple-Disease-Predictor-ML-Flask-WebApp` where this project exists.
+
+![Deployment](https://user-images.githubusercontent.com/109678911/204100265-8d0ce13f-cea2-4c2c-87a5-db7e3e05e422.PNG)
+
+**Step-3** : Go to Manual Deploy Section, then choose the main branch to deploy and then click on the Deploy Branch. Now, Build main will start.
+
+![Manual Deploy](https://user-images.githubusercontent.com/109678911/204100750-e803df4f-c8b7-4b33-987a-e56d1c14b733.jpg)
+
+
+**Step-4** : After sometime, the app will be deployed successfully.
+![Deployed](https://user-images.githubusercontent.com/109678911/204100938-4b999ca5-b5b2-4fc1-ba66-712f2ba7d254.PNG)
+
+
 
 ### Run
 
