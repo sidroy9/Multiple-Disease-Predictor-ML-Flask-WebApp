@@ -7,17 +7,6 @@ It's an end-to-end Machine Learning Project. The purpose of this project is to p
 
 Visit: https://multiple-disease-predictor-ml.herokuapp.com/  (This link might not work if the Heroku will discontinue its Free tier/plan, in that case, please scroll down and see how this deployed web app looks like on Heroku)
 
-### Install
-
-This project requires **Python** and the following Python libraries installed:
-
-- NumPy
-- Pandas
-- matplotlib
-- Seaborn
-- scikit-learn
-- Flask
-
 
 ### Screenshots (of This Web App When it is Live On Heroku)
 
@@ -47,6 +36,17 @@ This project requires **Python** and the following Python libraries installed:
 
 ![HeartDiseasePredictionPage](https://user-images.githubusercontent.com/109678911/204099841-0298aa88-9b1f-4d38-bf6e-14dd9527d9f6.PNG)
 
+### Install
+
+This project requires **Python** and the following Python libraries installed:
+
+- NumPy
+- Pandas
+- matplotlib
+- Seaborn
+- scikit-learn
+- Flask
+
 ### How this project has been created
 
 **Step-1** : Build and trained ML models for each of the 3 diseases, whose code is written in the `diabetes.py`, `heart.py` and `parkinsons.py` files and saved the model in pickle file `diabetes.pkl`, `heart.pkl`, and `parkinsons.pkl` respectively.
@@ -74,8 +74,9 @@ Procfile is a mechanism for declaring the commands that are executed by an Herok
 ![Manual Deploy](https://user-images.githubusercontent.com/109678911/204100750-e803df4f-c8b7-4b33-987a-e56d1c14b733.jpg)
 
 
-**Step-4** : After sometime, the app will be deployed successfully.
-![Deployed](https://user-images.githubusercontent.com/109678911/204100938-4b999ca5-b5b2-4fc1-ba66-712f2ba7d254.PNG)
+**Step-4** : After sometime, the app will be deployed successfully. You can click on View to see the live web app. 
+
+![Deployed](https://user-images.githubusercontent.com/109678911/204101351-721158a6-3e81-4893-844b-8f03329b2e5e.jpg)
 
 
 
